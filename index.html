@@ -6,43 +6,72 @@
   <title>Jason Studstill | Developer</title>
 </head>
 <body>
-  <section class="nav-wrapper">
-    <nav class="nav">
-      <li>
-        <a href="http://">
-          About
-        </a>
-      </li>
-      <li>
-        <a href="http://twitter.com/standstill64">
-          <img src="lib/twitter-512.png" alt="Twitter Logo">
-        </a>
-      </li>
-      <li>
-        <a href="http://github.com/studstill">
-          <img src="lib/github-512.png" alt="Github Logo">
-        </a>
-      </li>
-      <li>
-        <a href="http://linkedin/in/jasonstudstill">
-          <img src="lib/linkedin-512.png" alt="LinkedIn Logo">
-        </a>
-      </li>
-    </nav>
-  </section>
-  <section class="hero-wrapper">
-    <section class="hero-box">
-      <h1>JASON STUDSTILL</h1>
-      <h3>WEB DEVELOPER</h3>
+  <video autoplay loop poster="lib/code-typing-video.jpg" id="typing-vid">
+    <source src="lib/code-typing-video.webm" type="video/webm" />
+    <source src="lib/code-typing-video.mp4" type="video/mp4" />
+  </video>
+  <main class="main">
+    <section class="nav-wrapper">
+      <nav class="nav">
+  <!--       <li>
+          <a href="http://">
+            About
+          </a>
+        </li> -->
+        <li>
+          <a href="http://twitter.com/standstill64" target="_blank">
+            <img src="lib/twitter-512.png" alt="Twitter Logo">
+          </a>
+        </li>
+        <li>
+          <a href="http://github.com/studstill" target="_blank">
+            <img src="lib/github-512.png" alt="Github Logo">
+          </a>
+        </li>
+        <li>
+          <a href="http://linkedin.com/in/jasonstudstill" target="_blank">
+            <img src="lib/linkedin-512.png" alt="LinkedIn Logo">
+          </a>
+        </li>
+      </nav>
     </section>
-  </section>
-  <section class="portfolio-wrapper">
-    <section class="portfolio">
-      <li>The Universal Wishlist</li>
-      <li>Looking For Game</li>
-      <li>React Native Pokedex</li>
+    <section class="hero-wrapper">
+      <section class="hero-box">
+        <h1>JASON STUDSTILL</h1>
+        <h3>DEVELOPER</h3>
+      </section>
     </section>
-  </section>
+    <section class="portfolio-wrapper">
+      <section class="portfolio">
+        <li>
+          <a href="http://www.theuniversalwishlist.com" target="_blank">
+            The Universal Wishlist
+          </a>
+        </li>
+        <li>
+          <a href="http://lookingforgame.herokuapp.com" target="_blank">
+            Looking For Game
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/RqkXFsuWdqQ" target="_blank">
+            React Native Pokedex
+          </a>
+        </li>
+      </section>
+    </section>
+  </main>
   <script src="./app.js"></script>
+  <!-- Include Google Analytis tracking -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-75373792-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
