@@ -1,0 +1,655 @@
+/**********************************************************************
+This stylesheet was adapted from the "Agency"
+Bootstrap theme by BlackrockDigital:
+http://startbootstrap.com/template-overviews/agency
+The original MIT liscence can be found here:
+https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
+************************************************************************/
+
+@import "variables.scss";
+@import "mixins.scss";
+
+// Background Video
+// Source: http://www.coverr.co/
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../../lib/code-typing-video.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background: url(../../lib/code-typing-video.jpg) white no-repeat;
+        background-size: 250%;
+    }
+
+    #typing-vid {
+      display: none;
+    }
+}
+
+// Global Components
+
+body {
+    overflow-x: hidden;
+    @include body-font;
+    background: url(../../lib/code-typing-video.jpg) #000 no-repeat;
+    background-color: white;
+    background-size: 250%;
+}
+
+.text-muted {
+    color: $gray-light;
+}
+
+.text-primary {
+    color: $theme-primary;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+p.large {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+}
+
+a {
+    color: $theme-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: darken($theme-primary, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include heading-font;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+    background-color: $gray-darker;
+}
+
+// Restyled Primary Buttons
+
+.btn-primary {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+}
+
+.btn-xl {
+    @include button-variant(white, $theme-primary, $theme-primary);
+    @include heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+// Custom Navigation Bar
+
+.navbar-custom {
+    background-color: $gray-darker;
+    border-color: transparent;
+    .navbar-brand {
+        color: white;
+        @include script-font;
+        opacity: 0;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken($theme-primary, 10%);
+        }
+    }
+    .navbar-collapse {
+        border-color: fade-out(white, .02);
+    }
+    .navbar-toggle {
+        background-color: $theme-primary;
+        border-color: $theme-primary;
+        @include heading-font;
+        color: white;
+        font-size: 12px;
+        &:hover,
+        &:focus {
+            background-color: $theme-primary;
+        }
+    }
+    .nav {
+        li {
+            a {
+                @include heading-font;
+                font-weight: 400;
+                font-size: 1.25em;
+                letter-spacing: 1px;
+                color: white;
+                &:hover,
+                &:focus {
+                    color: $theme-primary;
+                    outline: none;
+                }
+            }
+            i {
+                font-size: 1.5em;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .navbar-nav>.active>a {
+        border-radius: 0;
+        color: $theme-primary;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        color: $theme-primary;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        .navbar-nav>.active>a {
+            border-radius: 3px;
+        }
+    }
+}
+
+// Navbar Change on Scroll
+
+@media(min-width:768px) {
+    .navbar-custom.affix {
+        background-color: $gray-darker;
+        padding: 10px 0;
+        .navbar-brand {
+            margin: 0.25em 0;
+            font-size: 2em;
+            opacity: 1;
+        }
+    }
+
+}
+
+header {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    @include background-cover;
+    text-align: center;
+    color: white;
+    .intro-text {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        .intro-sub-heading {
+            font-family: "basictitlefont";
+            font-size: 1.5em;
+        }
+        .intro-heading {
+            font-family: 'keepcalm';
+            font-size: 2.5em;
+        }
+
+        background-color: black;
+        color: white;
+        border: solid;
+        font-family: 'keepcalm';
+        letter-spacing: 2px;
+        margin: 25% 5%;
+        text-align: center;
+        opacity: .8;
+
+    }
+}
+
+@media(min-width:768px) {
+    header {
+        .intro-text {
+            padding-top: 3em;
+            padding-bottom: 3em;
+            .intro-sub-heading {
+                font-family: "basictitlefont";
+                font-size: 2em;
+            }
+            .intro-heading {
+                font-family: 'keepcalm';
+                font-size: 3em;
+            }
+
+            background-color: black;
+            color: white;
+            border: solid;
+            letter-spacing: 2px;
+            margin: 25% 15%;
+            text-align: center;
+            opacity: .8;
+        }
+    }
+}
+
+// Bouncing Arrow
+// Source: https://codepen.io/designer_guru/pen/JhyeH/
+
+.arrow {
+  position: relative;
+  margin: auto;
+  height: 0;
+  bottom: 1.5em;
+  display: none;
+  font-size: 5em;
+  .fa {
+      color: $gray-lighter;
+  }
+  a {
+      text-decoration: none;
+  }
+}
+
+.bounce {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+
+.animated {
+    -webkit-animation-fill-mode:both;
+    -moz-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    -o-animation-fill-mode:both;
+
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-fill-mode:both;
+    -webkit-animation-duration:2s;
+    -moz-animation-duration:2s;
+    -ms-animation-duration:2s;
+    -o-animation-duration:2s;
+    animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
+// Global Section Styles
+
+section {
+    padding: 25px 0;
+    h2.section-heading {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 16px;
+        @include serif-font;
+        text-transform: none;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width:768px) {
+    section {
+        padding: 25px 0;
+        h2.section-heading {
+            margin-top: 50px;
+        }
+    }
+}
+
+// Portfolio Section
+
+#portfolio {
+    .portfolio-item {
+        margin: 0 0 15px;
+        right: 0;
+        .portfolio-link {
+            display: block;
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto;
+            .portfolio-hover {
+                background: fade-out($theme-primary, .9);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all ease 0.5s;
+                -webkit-transition: all ease 0.5s;
+                -moz-transition: all ease 0.5s;
+                &:hover {
+                    opacity: 1;
+                }
+                .portfolio-hover-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -12px;
+                    color: white;
+                    i {
+                        margin-top: -12px;
+                    }
+                    h3,
+                    h4 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .portfolio-caption {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 25px;
+            h4 {
+                text-transform: none;
+                margin: 0;
+            }
+            p {
+                @include serif-font;
+                font-style: italic;
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+    * {
+        z-index: 2;
+    }
+}
+
+@media(min-width:767px) {
+    #portfolio {
+        .portfolio-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+// Technical Skills Section
+
+#skills {
+    background: white;
+    table {
+        overflow: auto;
+        display: block;
+        margin: 1em auto 4em;
+        padding: 0 2em;
+        font-family: "basictitlefont";
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.75em;
+        .table-header {
+            background-color: $theme-primary;
+            font-weight: bold;
+        }
+        td {
+            padding: 1em;
+            border: black 1px solid;
+        }
+        .table-offset-row {
+            background-color: lighten($theme-primary, 30%);
+        }
+    }
+
+}
+
+@media(min-width:767px) {
+    #skills {
+        .skills-item {
+            margin: 0 0 30px;
+        }
+    }
+}
+
+// Bio Section
+
+.bio {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+        margin: 0 auto;
+        max-width: 300px;
+        width: 100%;
+        border: 7px solid white;
+    }
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
+
+// Footer
+
+footer {
+    background-color: white;
+    padding: 25px 0;
+    text-align: center;
+    span.copyright {
+        line-height: 40px;
+        @include heading-font;
+        text-transform: none;
+    }
+    ul.quicklinks {
+        margin-bottom: 0;
+        line-height: 40px;
+        @include heading-font;
+        text-transform: none;
+    }
+    div.row {
+        margin: auto;
+    }
+}
+
+// Social Buttons
+
+ul.social-buttons {
+    margin-bottom: 0;
+    li {
+        a {
+            display: block;
+            background-color: $gray-darker;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            font-size: 20px;
+            line-height: 40px;
+            color: white;
+            outline: none;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $theme-primary;
+            }
+        }
+    }
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: none;
+}
+
+.portfolio-modal {
+    .modal-dialog{
+        margin: 0;
+        height: 100%;
+        width: auto;
+    }
+    .modal-content {
+        border-radius: 0;
+        background-clip: border-box;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        min-height: 100%;
+        padding: 100px 0;
+        text-align: center;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 3em;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        p.item-intro {
+            margin: 20px 0 30px;
+            @include serif-font;
+            font-style: italic;
+            font-size: 16px;
+        }
+        ul.list-inline {
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
+    .close-modal {
+        position: absolute;
+        width:75px;
+        height:75px;
+        background-color:transparent;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.3;
+        }
+        .lr {
+            height:75px;
+            width:1px;
+            margin-left:35px;
+            background-color:$gray-darker;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -webkit-transform: rotate(45deg);
+            /* Safari and Chrome */
+            z-index:1051;
+            .rl {
+                height:75px;
+                width:1px;
+                background-color:$gray-darker;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                /* IE 9 */
+                -webkit-transform: rotate(90deg);
+                /* Safari and Chrome */
+                z-index:1052;
+            }
+        }
+    }
+    .modal-backdrop {
+        opacity: 0;
+        display: none;
+    }
+}
+
+// Highlight Color Customization
+
+::-moz-selection {
+    text-shadow: none;
+    background: $theme-primary;
+}
+
+::selection {
+    text-shadow: none;
+    background: $theme-primary;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: $theme-primary;
+}

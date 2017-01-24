@@ -1,71 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KVPGLT');</script>
-  <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="app.css">
-  <title>Jason Studstill | Developer</title>
+
+    <!-- This page was adapted from the "Agency" Bootstrap theme by BlackrockDigital: http://startbootstrap.com/template-overviews/agency
+    The original MIT liscence can be found here: https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio Site for Jason Studstill">
+    <meta name="author" content="Jason Studstill">
+
+    <title>Jason Studstill | Developer</title>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KVPGLT');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Main CSS -->
+    <link href="css/main.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVPGLT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <video autoplay loop poster="lib/code-typing-video.jpg" id="typing-vid">
-    <source src="lib/code-typing-video.webm" type="video/webm" />
-    <source src="lib/code-typing-video.mp4" type="video/mp4" />
-  </video>
-  <main class="main">
-    <section class="nav-wrapper">
-      <nav class="nav">
-        <li>
-          <a href="http://twitter.com/standstill64" target="_blank">
-            <img src="lib/twitter-512.png" alt="Twitter Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://github.com/studstill" target="_blank">
-            <img src="lib/github-512.png" alt="Github Logo">
-          </a>
-        </li>
-        <li>
-          <a href="http://linkedin.com/in/jasonstudstill" target="_blank">
-            <img src="lib/linkedin-512.png" alt="LinkedIn Logo">
-          </a>
-        </li>
-      </nav>
+
+<body id="page-top" class="index">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVPGLT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Jason Studstill</a>
+            </div>
+
+            <!-- Collect the nav links and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top"></a>
+                    </li>
+                    <li><a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li><a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li><a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li><a href="//linkedin.com/in/jasonstudstill" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li><a href="//github.com/studstill" target="_blank"><i class="fa fa-github"></i></a>
+                    </li>
+                    <li><a href="//twitter.com/standstill64" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <video autoplay loop poster="lib/code-typing-video.jpg" id="typing-vid" async>
+        <source src="lib/code-typing-video.webm" type="video/webm" async />
+        <source src="lib/code-typing-video.mp4" type="video/mp4" async />
+    </video>
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">JASON STUDSTILL</div>
+                <div class="intro-sub-heading">SOFTWARE DEVELOPER</div>
+            </div>
+            <div class="arrow animated bounce">
+                <a href="#portfolio" class="page-scroll">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <p></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Development Projects</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/universal-wish-list.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Universal Wishlist</h4>
+                        <p class="text-muted">Front-End Designer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/looking-for-game.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Looking for Game</h4>
+                        <p class="text-muted">Server-Side Developer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/travel-match.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Travel Match</h4>
+                        <p class="text-muted">Front-End Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="hero-wrapper">
-      <section class="hero-box">
-        <h1>JASON STUDSTILL</h1>
-        <h3>SOFTWARE ENGINEER</h3>
-      </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technical Skills</h2>
+                    <h3 class="section-subheading text-muted">Never Stop Improving</h3>
+                </div>
+            </div>
+            <div class="row">
+                <table>
+                    <tbody>
+                        <tr class="table-header">
+                            <td colspan="4" class="col-sm-6">
+                                <strong>Proficient</strong>
+                            </td>
+                            <td class="col-sm-2">
+                                <strong>Developing</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                JavaScript
+                            </td>
+                            <td>
+                                React.js
+                            </td>
+                            <td>
+                                HTML5
+                            </td>
+                            <td>
+                                REST API&rsquo;s
+                            </td>
+                            <td>
+                                Java
+                            </td>
+                        </tr>
+                        <tr class="table-offset-row">
+                            <td>
+                                NodeJS
+                            </td>
+                            <td>
+                                Jira / Asana
+                            </td>
+                            <td>
+                                jQuery
+                            </td>
+                            <td>
+                                MongoDB
+                            </td>
+                            <td>
+                                MySQL
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Unit Testing
+                            </td>
+                            <td>
+                                Git
+                            </td>
+                            <td>
+                                CSS / SASS
+                            </td>
+                            <td>
+                                ExpressJS
+                            </td>
+                            <td>
+                                Angular.js
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
-    <section class="portfolio-wrapper">
-      <section class="portfolio">
-        <li>
-          <a href="http://www.theuniversalwishlist.com" target="_blank">
-            The Universal Wishlist
-          </a>
-        </li>
-        <li>
-          <a href="http://lookingforgame.herokuapp.com" target="_blank">
-            Looking For Game
-          </a>
-        </li>
-        <li>
-          <a href="https://youtu.be/RqkXFsuWdqQ" target="_blank">
-            React Native Pokedex
-          </a>
-        </li>
-      </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Solving problems one coffee at a time</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="bio">
+                        <a href="//linkedin.com/in/jasonstudstill" target="_blank"><img src="img/jason.jpg" class="img-responsive img-circle" alt=""></a>
+                        <h4>Jason Studstill</h4>
+                        <p class="text-muted">Software Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="//linkedin.com/in/jasonstudstill" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="//github.com/studstill" target="_blank"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li><a href="//twitter.com/standstill64" target="_blank"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-lg-10 text-center">
+                        <p class="large text-muted">
+                            I am a JavaScript developer experienced in building REST APIs with NoSQL databases. I also have experience with front-end frameworks like React.js and Angular.js.
+                        </p>
+                        <p class="large text-muted">
+                            &#8226;
+                        </p>
+                        <p class="large text-muted">
+                            When developing software I push myself to learn quickly to solve problems, and I rely on my marketing background to see the big picture and keep the consumer in mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <span class="copyright">Copyright &copy; <a href="mailto:jason@jasonstudstill.com">Jason Studstill</a> 2017</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Universal Wishlist</h2>
+                                <p class="item-intro text-muted">The Anywhere Registry</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/universal-wish-list-preview.png" alt="">
+                                <p>
+                                    Web application allowing users to create and share wish for any retailer
+                                    <br/><br/>
+                                    Using ReactJS, I was responsible for the front-end design, usability, and all major React functionality. This web application allows users to create and share wish lists for products available anywhere on the internet.
+                                    <br/><br/>
+                                    Technologies Used: React.js, MongoDB, Express.js, and Node.js
+                                </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Looking for Game</h2>
+                                <p class="item-intro text-muted">Connecting Board Gamers in Real Time<p>
+                                <img class="img-responsive img-centered" src="img/portfolio/looking-for-game-preview.png" alt="">
+                                <p>
+                                    Web application for connecting users to host, find and play board games with people in their area
+                                    <br/><br/>
+                                    I was responsible for managing the design and implementation of the server-side REST API using Express.js and MongoDB as well as unit and integration testing
+                                    <br/><br/>
+                                    Techonologies Used: NodeJS, Express, Angular.js, MongoDB, and Mocha (testing framework)
+                                </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Travel Match</h2>
+                                <p class="item-intro text-muted">Go Someplace Unexpected</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/travel-match-preview.png" alt="">
+                                <p>
+                                    Web application that matches users with destinations they might not have considered and provides them with information on flight prices, things to do, etc.
+                                    <br/><br/>
+                                    Responsible for major React.js functionality, particularly routing and API integration
+                                    <br/><br/>
+                                    Technologies Used: React.js, Expedia API's, Wikipedia API
+                                </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/main.min.js"></script>
+
 </body>
+
 </html>
