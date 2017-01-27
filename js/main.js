@@ -46,4 +46,10 @@ https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
         $('.arrow').fadeOut();
     });
 
+    // Maintain current copyright year
+    var copyrightYearSpan = document.querySelector('#copyrightYear');
+    var date = new Date();
+    var year = date.getFullYear();
+    copyrightYearSpan.innerHTML = year;
+
 })(jQuery); // End of use strict
