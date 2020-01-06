@@ -7,7 +7,7 @@ https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
 ************************************************************************/
 
 (function($) {
-    "use strict"; // Start of use strict
+    'use strict'; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -25,7 +25,7 @@ https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){
+    $('.navbar-collapse ul li a').click(function() {
             $('.navbar-toggle:visible').click();
     });
 
@@ -34,10 +34,10 @@ https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE
         offset: {
             top: 100
         }
-    })
+    });
 
     // Fade In Bouncing Arrow after 2.5 seconds
-    window.setTimeout(function () {
+    window.setTimeout(function() {
         $('.arrow').fadeIn();
     }, 2500);
 
